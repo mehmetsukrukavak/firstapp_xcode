@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My First App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L8-XL-pXD">
-                                <rect key="frame" x="100" y="129" width="193" height="37"/>
+                                <rect key="frame" x="100" y="116" width="193" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="HBQ-gn-aru"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Metallica1" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-nl-V65">
-                                <rect key="frame" x="51" y="302" width="291" height="248"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4c-dS-Rzn">
                                 <rect key="frame" x="113" y="586" width="166" height="87"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="4kN-2h-fqN"/>
+                                    <constraint firstAttribute="height" constant="87" id="WJo-nz-Bt6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change"/>
@@ -36,19 +36,22 @@
                                     <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plv-lW-6fF"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Metallica1" translatesAutoresizingMaskIntoConstraints="NO" id="WhS-nl-V65">
+                                <rect key="frame" x="59" y="215" width="274" height="353"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WhS-nl-V65" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0db-0Q-xJA"/>
-                            <constraint firstItem="WhS-nl-V65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="Azg-Lp-Gai"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M4c-dS-Rzn" secondAttribute="bottom" constant="145" id="Dgl-A0-YRk"/>
-                            <constraint firstItem="WhS-nl-V65" firstAttribute="centerX" secondItem="M4c-dS-Rzn" secondAttribute="centerX" id="HFl-Km-DBI"/>
-                            <constraint firstItem="M4c-dS-Rzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IWS-kx-NGT"/>
-                            <constraint firstItem="7L8-XL-pXD" firstAttribute="centerX" secondItem="WhS-nl-V65" secondAttribute="centerX" id="XdB-Vr-A1Y"/>
-                            <constraint firstItem="M4c-dS-Rzn" firstAttribute="top" secondItem="WhS-nl-V65" secondAttribute="bottom" constant="36" id="qM9-xh-9Rw"/>
-                            <constraint firstItem="7L8-XL-pXD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="vBO-ok-Ut5"/>
-                            <constraint firstItem="M4c-dS-Rzn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="whX-sW-bMT"/>
+                            <constraint firstItem="M4c-dS-Rzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Ai-qQ-wXD"/>
+                            <constraint firstItem="WhS-nl-V65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="DTt-zr-lfk"/>
+                            <constraint firstItem="WhS-nl-V65" firstAttribute="top" secondItem="7L8-XL-pXD" secondAttribute="bottom" constant="65" id="QuE-7s-hzx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M4c-dS-Rzn" secondAttribute="bottom" constant="145" id="RuU-mK-aoi"/>
+                            <constraint firstItem="M4c-dS-Rzn" firstAttribute="top" secondItem="WhS-nl-V65" secondAttribute="bottom" constant="15" id="Yzu-o6-ycR"/>
+                            <constraint firstItem="7L8-XL-pXD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="cR1-RM-8Ps"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WhS-nl-V65" secondAttribute="trailing" constant="52" id="hiL-jN-1Hr"/>
+                            <constraint firstItem="M4c-dS-Rzn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="rpT-eX-zhu"/>
+                            <constraint firstItem="7L8-XL-pXD" firstAttribute="centerX" secondItem="M4c-dS-Rzn" secondAttribute="centerX" id="tLR-Of-9BU"/>
                         </constraints>
                     </view>
                     <connections>
